@@ -24,4 +24,30 @@ public class Calculator {
         memory -= x;
         return memory;
     }
+
+    public double multiply(double x){
+        memory *= x;
+        return memory;
+    }
+    public double divide(double x)throws ArithmeticException{
+        if (x==0.0) throw new ArithmeticException();
+        memory /= x;
+        return memory;
+    }
+    public double square(){
+        memory = Math.pow(memory,2);
+        return memory;
+    }
+    public double squareRoot(){
+        memory = Math.sqrt(memory);
+        return memory;
+    }
+    public double exponential(double x){
+        memory = Math.pow(memory,x);
+        return memory;
+    }
+    public double inverse (){
+        memory *= -1;
+        return memory;
+    }
 }
