@@ -1,8 +1,8 @@
 package hbcu.stay.ready.ttime;
 
-public class Scientific {
+public class Scientific extends Display{
     private double memory;
-    private double i;
+    //private double i;
 
     public Scientific(){
         memory = 0;
@@ -59,7 +59,7 @@ public class Scientific {
         return memory;
     }
 
-    public double switchUnitsMode() {
+   /* public double switchUnitsMode() {
         //double i;
         if (i % 2 == 0) {
             memory = Math.toDegrees(memory);
@@ -70,7 +70,7 @@ public class Scientific {
             System.out.println(memory);
             }
         return memory;
-    }
+    }*/
     public double clearMemory(){
         memory = 0;
         return memory;
